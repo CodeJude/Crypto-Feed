@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import Coins from "./components/Coins";
 import Coin from "./routes/Coin";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 import "./index.css";
 
@@ -18,7 +17,6 @@ function App() {
       .get(url)
       .then((response) => {
         setCoins(response.data);
-        console.log(response.data[0]);
       })
       .catch((error) => {
         console.log(error);
