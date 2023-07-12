@@ -18,10 +18,10 @@ const CoinItem = ({ coins }) => {
         <img src={image} alt="coin symbol" />
         <p>{symbol.toUpperCase()}</p>
       </div>
-      <p>{current_price}</p>
+      <p>${current_price.toLocaleString()}</p>
       <p>{price_change_percentage_24h.toFixed(2)}%</p>
-      <p className="hide-mobile">{total_volume.toLocaleString()}</p>
-      <p className="hide-mobile">{market_cap.toLocaleString()}</p>
+      <p className="hide-mobile">${total_volume.toLocaleString()}</p>
+      <p className="hide-mobile">${market_cap.toLocaleString()}</p>
     </div>
   );
 };
